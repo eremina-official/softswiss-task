@@ -197,10 +197,23 @@ let isDarkTheme = false;
 toggleThemeButton.addEventListener('click', () => {
   isDarkTheme = !isDarkTheme;
   body.classList.toggle('theme-dark', isDarkTheme);
+  // save to local storage
+  localStorage.setItem('theme', JSON.stringify(isDarkTheme ? 'theme-dark' : ''));
 });
 
 // add go to top button functionality
 const goToTopButton = document.querySelector('#button-to-top');
 goToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// add parallax functionality
+const parallaxImgRight = document.querySelector('.right-hero-img');
+const parallaxImgLeft = document.querySelector('.left-hero-img');
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  // Adjust factor (0.3 = slower than scroll)
+  parallaxImgRight.style.transform = `translateY(${scrolled * 0.3}px)`;
+  parallaxImgLeft.style.transform = `translateY(${scrolled * 0.3}px)`;
 });
