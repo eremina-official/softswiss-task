@@ -56,6 +56,8 @@
   padding: 0;
 }
 
+/* common styles */
+
 .content-max-width {
   width: 100%;
   max-width: 600px;
@@ -80,13 +82,6 @@
 
 #button-dark-mode {
   display: none;
-}
-
-.header-right {
-  margin-left: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: var(--gap-spacing-5);
 }
 
 .button {
@@ -145,6 +140,8 @@
   font-weight: 400;
 }
 
+/* end common styles */
+
 header {
   position: fixed;
   top: 0;
@@ -152,7 +149,14 @@ header {
   left: 0%;
   padding-top: 0;
   transition: .2s ease;
-  z-index: 1;
+  z-index: 2;
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--gap-spacing-5);
 }
 
 .wrapper {
