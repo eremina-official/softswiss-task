@@ -169,6 +169,19 @@ header {
   box-shadow: 0px 0px 10px rgba(29, 29, 27, 0.1);
 }
 
+#logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 150px;
+  background: url('/public/assets/logo=softswiss_black.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  min-width: 150px;
+  height: 30px;
+}
+
 main {
   padding-top: var(--header-height);
 }
@@ -587,6 +600,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex: 1;
+    background-position: center;
   }
 
   button#button-burger-menu {
@@ -799,19 +813,23 @@ footer {
 }
 
 
- :root body.theme-dark {
-    --color-card-white: #000000;
-    --color-card-black: #ffffff;
-    --color-card-gray: #FFFFFFCC;
-    --color-gray-3: #343432;
-    --color-gray-4: #fff;
-    --color-gray-5: #343432;
-    --color-gray-6: #FFFFFF33;
-    --color-white: #ffffff;
-  }
+:root body.theme-dark {
+  --color-card-white: #000000;
+  --color-card-black: #ffffff;
+  --color-card-gray: #FFFFFFCC;
+  --color-gray-3: #343432;
+  --color-gray-4: #fff;
+  --color-gray-5: #343432;
+  --color-gray-6: #FFFFFF33;
+  --color-white: #ffffff;
+}
 
-  body.theme-dark header {
-    svg path {
-      fill: var(--color-white);
-    }
+body.theme-dark #logo-wrapper {
+  background: url('/public/assets/logo=softswiss_white.svg');
+}
+
+body.theme-dark header {
+  svg path {
+    fill: var(--color-white);
   }
+}

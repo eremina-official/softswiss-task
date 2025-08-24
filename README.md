@@ -1,4 +1,6 @@
-Test task for a Frontend Developer position (marketing team) at SOFTSWISS.
+## Test task for a Frontend Developer position (marketing team) at SOFTSWISS.
+
+DEMO: [https://eremina-official.github.io/softswiss-task/](https://eremina-official.github.io/softswiss-task/)
 
 Technologies stack:
 - HTML
