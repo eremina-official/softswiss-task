@@ -1,4 +1,5 @@
 import telegramLogo from '/assets/telegram.svg';
+import arrowRight from '/assets/arrow-right-2.svg';
 import Swiper from 'swiper';
 import { Navigation, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
@@ -15,7 +16,7 @@ document.querySelector('#cards-section-one').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -28,7 +29,7 @@ document.querySelector('#cards-section-one').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -41,7 +42,7 @@ document.querySelector('#cards-section-one').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -54,7 +55,7 @@ document.querySelector('#cards-section-one').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -70,7 +71,7 @@ document.querySelector('#cards-section-two').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -83,7 +84,7 @@ document.querySelector('#cards-section-two').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -96,7 +97,7 @@ document.querySelector('#cards-section-two').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
@@ -109,7 +110,7 @@ document.querySelector('#cards-section-two').innerHTML = /* html */ `
     <div class="card__content">
       <span class="card__content__bottom-text text-normal">Telegram Channel</span>
       <button class="button button--ghost" aria-label="More">
-        <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+        <img class="card__image" src=${arrowRight} alt="card-image" />
       </button>
     </div>
   </article>
