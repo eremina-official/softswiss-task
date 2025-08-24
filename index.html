@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <title>SOFTSWISS</title>
+    <!-- quick fix for transition firing on page load, TODO find a better solution -->
+    <script> </script>
   </head>
-  <body">
+  <body>
     <div id="app">
       <!-- header -->
        <header>
-        <button class="button button-icon" id="button-burger-menu" aria-label="Menu">
-          <img src="/assets/burger.svg" alt="icon-login" />
-        </button>
-
-        <img src="/assets/logo=softswiss_black.svg" alt="logo-softswiss" />
-
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-list__item text-normal"><a href="#" class="nav-list__link">Menu item</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
-            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-right">
-          <button class="button button-icon" id="button-dark-mode" aria-label="Dark mode">
-            <img src="/assets/Icon_Dark_Mode.svg" alt="icon-dark-mode" />
+        <div class="wrapper">
+          <button class="button button-icon" id="button-burger-menu" aria-label="Menu">
+            <img src="/assets/burger.svg" alt="icon-login" />
           </button>
 
-          <button class="button button-icon button--red" id="button-contact" aria-label="Contact us">
-            <img src="/assets/message.svg" alt="icon-message" />
-          </button>
+          <span id="logo-wrapper"><img src="/assets/logo=softswiss_black.svg" alt="logo-softswiss" /></span>
+
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-list__item text-normal"><a href="#" class="nav-list__link">Menu item</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-right">
+            <button class="button button-icon" id="button-dark-mode" aria-label="Dark mode">
+              <img src="/assets/Icon_Dark_Mode.svg" alt="icon-dark-mode" />
+            </button>
+
+            <button class="button button-icon button--red" id="button-contact" aria-label="Contact us">
+              <img src="/assets/message.svg" alt="icon-message" />
+            </button>
+          </div>
         </div>
        </header>
 
@@ -65,26 +69,88 @@
           <div class="mask-button mask-button--right"></div>
         </section>
 
-        <section class="cards-section" id="cards-section">
-          <!-- <article class="card">
-            <div class="card__content">
-              <div class="card__content__icon-social">
-                <img class="card__image" src="/assets/telegram.svg" alt="card-image" />
+        <section class="cards-section">
+          <div id="cards-section" class="content-max-width">
+            <!-- <article class="card">
+              <div class="card__content">
+                <div class="card__content__icon-social">
+                  <img class="card__image" src="/assets/telegram.svg" alt="card-image" />
+                </div>
               </div>
-            </div>
-            <div class="card__content">
-              <span class="card__content__bottom-text text-normal">Telegram Channel</span>
-              <button class="button button--ghost" aria-label="More">
-                <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
-              </button>
-            </div>
-          </article> -->
+              <div class="card__content">
+                <span class="card__content__bottom-text text-normal">Telegram Channel</span>
+                <button class="button button--ghost" aria-label="More">
+                  <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+                </button>
+              </div>
+            </article> -->
+          </div>
         </section>
 
         <section class="section-licensing">
-          <div class="section-licensing__top">
-            <h2>Heading h2 (960px)</h2>
-            <p class="section-licensing__top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+          <div class="content-max-width">
+            <div class="section-licensing__top">
+              <h2>Heading h2 (960px)</h2>
+              <p class="section-licensing__top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+            </div>
+
+            <div class="section-licensing__swiper">
+            <!-- Slider main container -->
+              <div class="swiper">
+                <div class="swiper-controls">
+                  <!-- scrollbar -->
+                  <div class="swiper-scrollbar-number">1</div>
+                  <div class="swiper-scrollbar"></div>
+                  <div class="swiper-scrollbar-number">7</div>
+
+                  <!-- navigation buttons -->
+                  <div class="swiper-nav-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/assets/countries/National=brazil.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=greece.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=mexico.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=peru.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=romania.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=serbia.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="card__image" src="/assets/countries/National=spain.svg" alt="card-image" />
+                    <div class="slide__name">Country name</div>
+                    <div>Technology partners lorem Ipsum is simply dummy text of the</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

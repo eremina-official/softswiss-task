@@ -19,6 +19,6 @@ Steps:
 - Deploy to GitHub pages
 
 TODO
-- Is it possible to use Tailwind for styling?
+- If it is possible I would suggest to use Tailwind for styling
 - Did not find Sofia Pro font so fast for free for downloading, replaced with Arial
 - Cards are hardcoded?
