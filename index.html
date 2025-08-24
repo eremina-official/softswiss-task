@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <title>SOFTSWISS</title>
-    <!-- quick fix for transition firing on page load, TODO find a better solution -->
-    <script> </script>
+    <link rel="stylesheet" href="/src/style.css"/>
+    <script type="module" src="/src/main.js" defer></script>
   </head>
   <body>
     <div id="app">
@@ -70,25 +70,18 @@
         </section>
 
         <section class="cards-section">
-          <div id="cards-section" class="content-max-width">
-            <!-- <article class="card">
-              <div class="card__content">
-                <div class="card__content__icon-social">
-                  <img class="card__image" src="/assets/telegram.svg" alt="card-image" />
-                </div>
-              </div>
-              <div class="card__content">
-                <span class="card__content__bottom-text text-normal">Telegram Channel</span>
-                <button class="button button--ghost" aria-label="More">
-                  <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
-                </button>
-              </div>
-            </article> -->
+          <div id="cards-section" class="content-max-width gap-5">
+            <div class="cards-section-one" id="cards-section-one">
+              <!-- cards will be injected here by JS -->
+            </div>
+            <div class="cards-section-two" id="cards-section-two">
+              <!-- cards will be injected here by JS -->
+            </div>
           </div>
         </section>
 
         <section class="section-licensing">
-          <div class="content-max-width">
+          <div class="content-max-width gap-20">
             <div class="section-licensing__top">
               <h2>Heading h2 (960px)</h2>
               <p class="section-licensing__top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
@@ -158,15 +151,16 @@
 
       <!-- footer -->
        <footer>
-        <div class="footer__contacts">
-          <button class="button button-icon button--border-gray" aria-label="To top">
-            <img src="/assets/arrow-top-2.svg" alt="icon-arrow-top" />
-          </button>
-          <button class="button button--border-gray">test@softswiss.com</button>
+        <div class="footer__content">
+          <div class="footer__contacts">
+            <button id="button-to-top" class="button button-icon button--border-gray" aria-label="To top">
+              <img src="/assets/arrow-top-2.svg" alt="icon-arrow-top" />
+            </button>
+            <button class="button button--border-gray">test@softswiss.com</button>
+          </div>
+          <div id="footer__privacy" class="footer__privacy"></div>
         </div>
-        <div id="footer__privacy" class="footer__privacy"></div>
        </footer>
     </div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
