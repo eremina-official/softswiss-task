@@ -2,12 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://www.softswiss.com/wp-content/uploads/2024/08/favicon-1-36x36-1.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <title>SOFTSWISS</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body">
+    <div id="app">
+      <!-- header -->
+       <header>
+        <button class="button button-icon" id="button-burger-menu" aria-label="Menu">
+          <img src="/assets/burger.svg" alt="icon-login" />
+        </button>
+
+        <img src="/assets/logo=softswiss_black.svg" alt="logo-softswiss" />
+
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-list__item text-normal"><a href="#" class="nav-list__link">Menu item</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link">Menu item</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <button class="button button-icon" id="button-dark-mode" aria-label="Dark mode">
+            <img src="/assets/Icon_Dark_Mode.svg" alt="icon-dark-mode" />
+          </button>
+
+          <button class="button button-icon button--red" id="button-contact" aria-label="Contact us">
+            <img src="/assets/message.svg" alt="icon-message" />
+          </button>
+        </div>
+       </header>
+
+      <!-- main -->
+       <main>
+        <section class="hero-section">
+          <div class="hero-section__content">
+            <img class="left-hero-img" src="/assets/left-hero_2x.png" alt="hero-image" />
+            <img class="right-hero-img" src="/assets/right-hero_2x.png" alt="hero-image" />
+
+            <h1 class="hero-section__content__title">Heading h1</h1>
+            <p class="hero-section__content__text text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="mask-button"></div>
+          <div class="navigation-mask">
+            <button class="button button--ghost">
+              <img src="/assets/arrow-left.svg" alt="icon-arrow-left" />
+              <span class="button--ghost__text">Home</span>
+            </button>
+            <button class="button button--ghost">
+              <img src="/assets/arrow-left.svg" alt="icon-arrow-left" />
+              <span class="button--ghost__text">Menu item</span>
+            </button>
+          </div>
+          <div class="mask-button mask-button--right"></div>
+        </section>
+
+        <section class="cards-section" id="cards-section">
+          <!-- <article class="card">
+            <div class="card__content">
+              <div class="card__content__icon-social">
+                <img class="card__image" src="/assets/telegram.svg" alt="card-image" />
+              </div>
+            </div>
+            <div class="card__content">
+              <span class="card__content__bottom-text text-normal">Telegram Channel</span>
+              <button class="button button--ghost" aria-label="More">
+                <img class="card__image" src="/assets/arrow-right-2.svg" alt="card-image" />
+              </button>
+            </div>
+          </article> -->
+        </section>
+
+        <section class="section-licensing">
+          <div class="section-licensing__top">
+            <h2>Heading h2 (960px)</h2>
+            <p class="section-licensing__top__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+          </div>
+        </section>
+
+       </main>
+
+      <!-- footer -->
+       <footer>
+        <div class="footer__contacts">
+          <button class="button button-icon button--border-gray" aria-label="To top">
+            <img src="/assets/arrow-top-2.svg" alt="icon-arrow-top" />
+          </button>
+          <button class="button button--border-gray">test@softswiss.com</button>
+        </div>
+        <div id="footer__privacy" class="footer__privacy"></div>
+       </footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
