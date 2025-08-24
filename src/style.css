@@ -825,7 +825,7 @@ footer {
 }
 
 body.theme-dark #logo-wrapper {
-  background: url('/public/assets/logo=softswiss_white.svg');
+  background-image: url('/public/assets/logo=softswiss_white.svg');
 }
 
 body.theme-dark header {
